@@ -14,5 +14,4 @@ public class MemberForm {
     private String street;
     private String zipcode;
 
-
 }
