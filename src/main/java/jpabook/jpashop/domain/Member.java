@@ -17,14 +17,11 @@ public class Member {
 
     private String name;
 
-    @Embedded  // 내장 타입
+    @Embedded  // 내장 타입 
     private Address address;
 
-    @OneToMany(mappedBy = "member") // 읽기전용
+    @OneToMany(mappedBy = "member") // Order.java의 member 필드에 의해 읽기 전용이 됨
     private List<Order> orders = new ArrayList<>();
 
 }
-
-
-
 
